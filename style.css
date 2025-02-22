@@ -1,0 +1,95 @@
+/* Netflix-Inspired Background & Overall Theme */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1519750157634-b8a39caa8b12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+/* Dark Overlay for enhanced contrast */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.75);
+  z-index: -1;
+}
+
+/* Container for the form */
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading Styling */
+h1 {
+  text-align: center;
+  color: #E50914;
+  margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* Input & Select Styling */
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Radio Button Group Styling */
+.activities label {
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.activities input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #E50914;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #bf0811;
+}
+
+/* Result Section */
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+}
